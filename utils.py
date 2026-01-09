@@ -88,38 +88,39 @@ async def progress_bar(current, total, reply, start):
             # If in last 30% of progress, make green
             if progress_ratio > 0.7:
                 # The left part turns green from 70% progress onwards
-                progress_bar_list.append("🔳")
+                progress_bar_list.append("◾️")
             else:
                 # Between 0 and 70% progress filled blocks are orange
-                progress_bar_list.append("🔲")
+                progress_bar_list.append("◾️")
         elif pos - 1 < filled_length < pos:
             # Partial fill (between blocks), show orange as partial progress
-            progress_bar_list.append("◻️")
+            progress_bar_list.append("◽️")
         else:
             # Not filled yet, show white block
-            progress_bar_list.append("◻️")
+            progress_bar_list.append("◽️")
 
     # Extra tweak: if progress > 90%, all filled blocks green
     if progress_ratio >= 0.9:
         for i in range(int(filled_length)):
-            progress_bar_list[i] = "◻️"
+            progress_bar_list[i] = "◽️"
 
     progress_bar_str = "".join(progress_bar_list)
 
     msg = (
-        f"╭───⌯═════  𝗣𝗥𝗢𝗖𝗘𝗦  ═════⌯\n"
+        f"╭───💥 𝗨𝗣𝗟𝗢𝗔𝗗𝗘𝗥 💥───╮\n"
         f"├  **{percent:.1f}%** `{progress_bar_str}`\n├\n"
-        f"├ 🛜  𝗦𝗣𝗘𝗘𝗗 : | {hrb(speed)}/s \n"
-        f"├ ♻️  𝗣𝗥𝗢𝗖𝗘𝗦𝗦𝗘𝗗 : | {hrb(current)} \n"
-        f"├ 📦  𝗦𝗜𝗭𝗘 : | {hrb(total)} \n"
-        f"├ ⏰  𝗘𝗧𝗔 : | {hrt(eta_seconds, 1)}\n\n"
-        f"╰─═══ **   𝐒ɑη𝐣ɑʏ   **═══─╯"
+        f"├ 🛜 Speed : | {hrb(speed)}/s \n"
+        f"├ 🌐 Processed : | {hrb(current)} \n"
+        f"├ ⚙️ Size : | {hrb(total)} \n"
+        f"├ 🔦 ETA : | {hrt(eta_seconds, 1)}\n\n"
+        f"╰───💥[𝐒нɑᎥ𝚝ɑη❤️‍🔥]💥───╯\n"
     )
 
     try:
         await reply.edit(msg)
     except FloodWait as e:
         time.sleep(e.x)
+
 
 
 
