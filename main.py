@@ -839,26 +839,26 @@ async def txt_handler(bot: Client, m: Message):
 
             try:
                 cc = (
-    f"**{str(count).zfill(3)}❤️‍🔥**\n\n"
+    f"**{str(count).zfill(3)}**\n\n"
     f"**Tɪᴛʟᴇ :** `{name1}`\n\n"
     f"**𝗕ᴀᴛᴄʜ :** `{b_name}`\n\n"
     f"**Extracted BY : {CR}**\n"
 )
                 cc1 = (
-    f"**{str(count).zfill(3)}❤️‍🔥**\n\n"
+    f"**{str(count).zfill(3)}**\n\n"
     f"**Tɪᴛʟᴇ :**`{name1}`\n\n"
     f"**𝗕ᴀᴛᴄʜ :** `{b_name}`\n\n"
     f"**Extracted BY : {CR}**\n"
 )
-                cczip = f'**{str(count).zfill(3)}❤️‍🔥**\n\n**Zip Title :** `{name1}.zip`\n\n**Batch Name :**`{b_name}`\n\n**Extracted by: {CR}**\n' 
+                cczip = f'**{str(count).zfill(3)}**\n\n**Zip Title :** `{name1}.zip`\n\n**Batch Name :**`{b_name}`\n\n**Extracted by: {CR}**\n' 
                 ccimg = (
-    f"**{str(count).zfill(3)}❤️‍🔥**\n\n"
+    f"**{str(count).zfill(3)}**\n\n"
     f"**Tɪᴛʟᴇ :** `{name1}`\n\n"
     f"**𝗕ᴀᴛᴄʜ :** `{b_name}`\n\n"
     f"**Extracted BY: {CR}**\n"
 )
-                ccm = f'**{str(count).zfill(3)}❤️‍🔥**\n\n**Audio Title :** `{name1}.mp3`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by: **{CR}\n'
-                cchtml = f'**{str(count).zfill(3)}❤️‍🔥**\n\n**Html Title :** `{name1}.html`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by: **{CR}\n'
+                ccm = f'**{str(count).zfill(3)}**\n\n**Audio Title :** `{name1}.mp3`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by: **{CR}\n'
+                cchtml = f'**{str(count).zfill(3)}**\n\n**Html Title :** `{name1}.html`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by: **{CR}\n'
                   
                 if "drive" in url:
                     try:
