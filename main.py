@@ -842,23 +842,23 @@ async def txt_handler(bot: Client, m: Message):
     f"**{str(count).zfill(3)}**\n\n"
     f"**Tɪᴛʟᴇ :** `{name1}`\n\n"
     f"**𝗕ᴀᴛᴄʜ :** `{b_name}`\n\n"
-    f"**Extracted BY : {CR}**\n"
+    f"**Extracted Bʏ : {CR}**\n"
 )
                 cc1 = (
     f"**{str(count).zfill(3)}**\n\n"
     f"**Tɪᴛʟᴇ :**`{name1}`\n\n"
     f"**𝗕ᴀᴛᴄʜ :** `{b_name}`\n\n"
-    f"**Extracted BY : {CR}**\n"
+    f"**Extracted Bʏ : {CR}**\n"
 )
-                cczip = f'**{str(count).zfill(3)}**\n\n**Zip Title :** `{name1}.zip`\n\n**Batch Name :**`{b_name}`\n\n**Extracted by: {CR}**\n' 
+                cczip = f'**{str(count).zfill(3)}**\n\n**Zip Title :** `{name1}.zip`\n\n**Batch Name :**`{b_name}`\n\n**Extracted Bʏ: {CR}**\n' 
                 ccimg = (
     f"**{str(count).zfill(3)}**\n\n"
     f"**Tɪᴛʟᴇ :** `{name1}`\n\n"
     f"**𝗕ᴀᴛᴄʜ :** `{b_name}`\n\n"
-    f"**Extracted BY: {CR}**\n"
+    f"**Extracted Bʏ : {CR}**\n"
 )
-                ccm = f'**{str(count).zfill(3)}**\n\n**Audio Title :** `{name1}.mp3`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by: **{CR}\n'
-                cchtml = f'**{str(count).zfill(3)}**\n\n**Html Title :** `{name1}.html`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by: **{CR}\n'
+                ccm = f'**{str(count).zfill(3)}**\n\n**Audio Title :** `{name1}.mp3`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted Bʏ : **{CR}\n'
+                cchtml = f'**{str(count).zfill(3)}**\n\n**Html Title :** `{name1}.html`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted Bʏ : **{CR}\n'
                   
                 if "drive" in url:
                     try:
@@ -1208,8 +1208,8 @@ async def text_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'**🎞️ Title `{name} [{res}].mp4`\n\n🖇️LNK : <a href="{link}">Click Here</a>\n\n🎓 Uploaded By» {CREDIT}**'
-                cc1 = f'**📑 Title» `{name}`\n\n🖇️ LNK : <a href="{link}">Click Here</a>\n\n🎓 Uploaded By {CREDIT}**'
+                cc = f'**🎞️ Title `{name} [{res}].mp4`\n\n🖇️LNK : <a href="{link}">Click Here</a>\n\n🎓 Uploaded Bʏ» {CREDIT}**'
+                cc1 = f'**📑 Title» `{name}`\n\n🖇️ LNK : <a href="{link}">Click Here</a>\n\n🎓 Uploaded Bʏ {CREDIT}**'
                   
                 if "drive" in url:
                     try:
