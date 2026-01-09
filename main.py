@@ -839,30 +839,26 @@ async def txt_handler(bot: Client, m: Message):
 
             try:
                 cc = (
-    f"<b>——— ✦</b> {str(count).zfill(3)}✦ ———\n\n"
-    f"<b>🎞️ Tɪᴛʟᴇ :</b> {name1} \n"
-    f"<b>├── Extention : 𝐒нɑᎥ𝚝ɑη💖</b>\n"
-    f"<b>├── Resolution : [854x480]</b>\n\n"
-    f"<blockquote>📚  𝗕ᴀᴛᴄʜ : {b_name}</blockquote>"
-    f"\n\n<b>🌟 Extracted BY : {CR}</b>"
+    f"**{str(count).zfill(3)}❤️‍🔥**\n\n"
+    f"**Tɪᴛʟᴇ :** `{name1}`\n\n"
+    f"**𝗕ᴀᴛᴄʜ :** `{b_name}`\n\n"
+    f"**Extracted BY : {CR}**\n"
 )
                 cc1 = (
-    f"<b>——— ✦</b> {str(count).zfill(3)}✦ ———\n\n"
-    f"<b>📚  Tɪᴛʟᴇ :</b> {name1} \n"
-    f"<b>├── Extention : 𝐒нɑᎥ𝚝ɑη💖</b>\n\n"
-    f"<blockquote>📚  𝗕ᴀᴛᴄʜ : {b_name}</blockquote>"
-    f"\n\n<b>🌟 Extracted BY : {CR}</b>"
+    f"**{str(count).zfill(3)}❤️‍🔥**\n\n"
+    f"**Tɪᴛʟᴇ :**`{name1}`\n\n"
+    f"**𝗕ᴀᴛᴄʜ :** `{b_name}`\n\n"
+    f"**Extracted BY : {CR}**\n"
 )
-                cczip = f'[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{name1} .zip`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by: **{CR}\n' 
+                cczip = f'**{str(count).zfill(3)}❤️‍🔥**\n\n**Zip Title :** `{name1}.zip`\n\n**Batch Name :**`{b_name}`\n\n**Extracted by: {CR}**\n' 
                 ccimg = (
-    f"<b>——— ✦<b>: {str(count).zfill(3)}✦ ——— \n\n"
-    f"<b>🖼️  Tɪᴛʟᴇ</b> : {name1} \n"
-    f"<b>├── Extention : 𝐒нɑᎥ𝚝ɑη💖</b>\n\n"
-    f"<blockquote>📚  𝗕ᴀᴛᴄʜ : {b_name}</blockquote>"
-    f"\n\n<b>🌟 Extracted BY: {CR}</b>"
+    f"**{str(count).zfill(3)}❤️‍🔥**\n\n"
+    f"**Tɪᴛʟᴇ :** `{name1}`\n\n"
+    f"**𝗕ᴀᴛᴄʜ :** `{b_name}`\n\n"
+    f"**Extracted BY: {CR}**\n"
 )
-                ccm = f'[🎵]Audio Id : {str(count).zfill(3)}\n**Audio Title :** `{name1} .mp3`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by: **{CR}\n'
-                cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\n**Html Title :** `{name1} .html`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by: **{CR}\n'
+                ccm = f'**{str(count).zfill(3)}❤️‍🔥**\n\n**Audio Title :** `{name1}.mp3`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by: **{CR}\n'
+                cchtml = f'**{str(count).zfill(3)}❤️‍🔥**\n\n**Html Title :** `{name1}.html`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by: **{CR}\n'
                   
                 if "drive" in url:
                     try:
@@ -988,7 +984,7 @@ async def txt_handler(bot: Client, m: Message):
                     
 
                 elif 'drmcdni' in url or 'drm/wv' in url:
-                    Show = f"<i><b>📥 Fast Video Downloading</b></i>\n<blockquote><b>{str(count).zfill(3)}) {name1}</b></blockquote>"
+                    Show = f"<i><b>Fast Video Downloading</b></i>\n<blockquote><b>{str(count).zfill(3)}) {name1}</b></blockquote>"
                     prog = await bot.send_message(channel_id, Show, disable_web_page_preview=True)
                     res_file = await helper.decrypt_and_merge_video(mpd, keys_string, path, name, raw_text2)
                     filename = res_file
@@ -1002,7 +998,7 @@ async def txt_handler(bot: Client, m: Message):
 
              
                 else:
-                    Show = f"<i><b>📥 Fast Video Downloading</b></i>\n<blockquote><b>{str(count).zfill(3)}) {name1}</b></blockquote>"
+                    Show = f"<i><b>Fast Video Downloading</b></i>\n<blockquote><b>{str(count).zfill(3)}) {name1}</b></blockquote>"
                     prog = await bot.send_message(channel_id, Show, disable_web_page_preview=True)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -1029,19 +1025,9 @@ async def txt_handler(bot: Client, m: Message):
     (
         "<b>📬 ᴘʀᴏᴄᴇꜱꜱ ᴄᴏᴍᴘʟᴇᴛᴇᴅ</b>\n\n"
         "<blockquote><b>📚 ʙᴀᴛᴄʜ ɴᴀᴍᴇ :</b> "
-        f"{b_name}</blockquote>\n"
+        f"{b_name}</blockquote>\n\n"
         
-        "╭────────────────\n"
-        f"├ 🖇️ ᴛᴏᴛᴀʟ ᴜʀʟꜱ : <code>{len(links)}</code>\n"
-        f"├ ✅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟ : <code>{success_count}</code>\n"
-        f"├ ❌ ꜰᴀɪʟᴇᴅ : <code>{failed_count}</code>\n"
-        "╰────────────────\n\n"
-
-        "╭──────── 📦 ᴄᴀᴛᴇɢᴏʀʏ ────────\n"
-        f"├ 🎞️ ᴠɪᴅᴇᴏꜱ : <code>{video_count}</code>\n"
-        f"├ 📑 ᴘᴅꜰꜱ : <code>{pdf_count}</code>\n"
-        f"├ 🖼️ ɪᴍᴀɢᴇꜱ : <code>{img_count}</code>\n"
-        "╰────────────────────────────\n\n"
+        
         
         "<i>ᴇxᴛʀᴀᴄᴛᴇᴅ ʙᴏᴛꜱ </i>"
     )
